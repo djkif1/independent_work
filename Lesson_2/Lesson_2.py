@@ -37,9 +37,43 @@
 # todo (Built-in) - это функции встроенные в интерпретатор Python
 #   и для их использования в программах не надо импортировать модули
 
-#Новий тип данних bool. Пишеться з великої літери True, False
+# todo Тип данних bool. Пишеться з великої літери True, False будьте уважні
+# var = True
+# var_1 = False
+
+# print(bool(""))
+# print(bool(" "))
+# print(bool("0"))
+# print(bool(0))
+
+#todo Тип данних "None"
+
+# var = None
+# print(type(var), var)
+# print(bool(var))
+
+#todo: Математичні порівняння
+# ==, != - порівняння по значенню
+
+# var = 3
+# var_1 = 5
+# var_2 = var
+# print(var > var_1) # білше
+# print(var < var_1) # менше
+# print(var >= var_1) # білше,або дорівнює
+# print(var <= var_1) # менше,або дорівнює
+# print(var_2 != var) # не дорівнює
+# print(var_2 == var) # перевіряє на рівність
+# print(var == 3.0)
 
 
+#todo: is, not - порівняння по id
 
+# var = 3
+# print(var is 3) #True
+# print(5 is 5.0) #False перевіряє id, а не значення і тип
+print(not True) #False обертає значення навпаки
+print(True is True) #True
+print(not (True is True))# False обертає значення навпаки
 
 
