@@ -1,3 +1,14 @@
+# age = 18
+# # else if ,elif
+# if age <= 50:
+#     print("!!!")
+
+
+
+
+
+
+
 # int_num =100
 # if int_num > 10:
 #     print(">10")
@@ -33,8 +44,9 @@ print("jfh" in str_a)  # True #перевірка чи входе текст в 
 #todo: f string
 name = "Ivan"
 age = 32
-print(f"Hi {name}, you are {age} old")
+print(f"Hi {name}, you are {age} old")###
 
+#.split("/")
 
 
 
