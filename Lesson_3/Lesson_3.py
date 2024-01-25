@@ -38,24 +38,48 @@
 
 # todo in str
 
-str_a = "knkl Klkj nnjfhgfhgf"
-print("jfh" in str_a)  # True #перевірка чи входе текст в стрічку, чутливий до регістру
+#str_a = "knkl Klkj nnjfhgfhgf"
+#print("jfh" in str_a)  # True #перевірка чи входе текст в стрічку, чутливий до регістру
 
 #todo: f string
-name = "Ivan"
-age = 32
-print(f"Hi {name}, you are {age} old")###
+
+# name = "Ivan"
+# age = 32
+# print(f"Hi {name}, you are {age} old")###
+
+#todo:len() повертає кількість елементів
+#print(len("any text"))# 8 elements
+
+
+
+# todo: strip(), lstrip(), rstrip()
+
+#str= "+++asd+++asd+++"
+
+# print(str.strip("+"))# = asd+++asd видаляє з 2х сторін
+# print(str.rstrip("+"))# = +++asd+++asd видаляє зправа
+# print(str.lstrip("+"))# = asd+++asd+++ видаляє зліва
+
+#todo: .count(), .isdigit(), .find(), .isalpha()
+
+str= "+++asd+++asd+++"
+print(str.count("+")) # показує скілки обраних елементів в змінній/об'єкті
+
+print(str.isdigit()) #
+print(str.find())
+print(str.isalpha())
+
+
+
+
+
+
+
+
+
+
 
 #.split("/")
-
-
-
-
-
-
-
-
-
 
 
 
