@@ -125,13 +125,40 @@
 # print(list_b[-1][2])# звернення до списку у списку і вивід необхідного елемента
 
 # list_1= [232324,343545]
-# list_2= list_1
-# print(id(list_1),id(list_2), sep="\n" ,end="\nThat it's all!!")
+# list_2= list_1# не копіює список,а робить дубль(буде дві ссилки на один об'єкт в пам'яті (однакові ID))
+# print(id(list_1),id(list_2), sep="\n" ,end="\nThat it's all!!\n")
+#
+# print(list_1)
+# list_1.append(100)# Додае єлемент в список
+# print(list_1,list_2)
+#
+# del_element = list_1.pop()# .pop() -видаляє останній елемент з списку (може зберігати видалений ел.)
+# print(list_1)
+# print(del_element)
+#
+# list_a = [123,445,66788,33]
+# list_b = list_a[:] # копіює список (створює повністю ідентичний об'єкт в пам'ті (різні ID))
+# print(id(list_a))
+# print(id(list_b))
+#
+# list_a.append("sss")
+# print(list_a)
+# print(list_b)
 
+#todo кращий варіант копіювати списки
+#
+# import copy
+#
+# list_c =[23,32,43]
+# list_d= copy.deepcopy(list_c)
+# print(id(list_c))
+# print(id(list_d))
+# list_d.append("www")
+# print(list_d)
+# print(list_c)
 
-
-
-
+list_a = [12,10,4,13,11]
+print(sum(list_a)/len(list_a)) #знаходимо середню арефметичну з list_a
 
 
 
