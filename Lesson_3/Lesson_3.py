@@ -114,7 +114,36 @@
 # or - Логічне АБО (OR)
 
 
-# todo: list
+# todo: list - список. list -це зарезервоване слово
+
+# list_a = []  # empty list
+# print(type(list_a))
+#
+# list_b = [1, 2, 3, "text", None, True, False, "text",[1, 2, 333,45]]# в список можна запихать майже що завгодно
+# print(type(list_b), list_b)
+# print(list_b[-2].upper())# звернення до елемента
+# print(list_b[-1][2])# звернення до списку у списку і вивід необхідного елемента
+
+# list_1= [232324,343545]
+# list_2= list_1
+# print(id(list_1),id(list_2), sep="\n" ,end="\nThat it's all!!")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
