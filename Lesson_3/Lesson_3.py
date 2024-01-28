@@ -157,23 +157,13 @@
 # print(list_d)
 # print(list_c)
 
-list_a = [12,10,4,13,11]
-print(sum(list_a)/len(list_a)) #знаходимо середню арефметичну з list_a
+# list_a = [12,10,4,13,11]
+# print(sum(list_a)/len(list_a)) #знаходимо середню арефметичну з list_a
 
 
+#todo .split("/")
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# .split("/")
+var_of_numb = "123 35 236 str"
+list_numb = var_of_numb.split()
+print(list_numb)
+print(type(list_numb[3]),list_numb[2])
