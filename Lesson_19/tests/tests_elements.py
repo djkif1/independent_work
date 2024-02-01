@@ -13,7 +13,7 @@ class TestElementsPage:
     #  assert elements[2] == "Radio Button"
 
     def test_is_button_enabled(self, chrome):
-        page = PageDynamicProperties(chrome)
+        page = PageDynamicProperties(chrome)# Довгий запис
         page.open()
         button: WebElement = page.disable_enable_button()
         button.click()
