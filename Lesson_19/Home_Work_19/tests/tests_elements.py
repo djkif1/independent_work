@@ -1,31 +1,48 @@
-from Lesson_19.DinamicPropertiesPage import PageDynamicProperties
-from selenium.webdriver.remote.webelement import WebElement
 from Lesson_19.ElementsPage import ElementsPage
+import pytest
+
 
 class TestElementsPage:
-    def test_page(self, chrome):
+
+    @pytest.mark.parametrize("index, expected_element", [
+        (0, 'Text Box'),
+        (1, 'Check Box'),
+        (2, 'Radio Button'),
+        (3, 'Web Tables'),
+        (4, 'Buttons'),
+        (5, 'Links'),
+        (6, 'Broken Links - Images'),
+        (7, 'Upload and Download'),
+        (8, 'Dynamic Properties'),
+        (9, ''),
+        (10, ''),
+        (11, ''),
+        (12, ''),
+        (13, ''),
+        (14, ''),
+        (15, ''),
+        (16, ''),
+        (17, ''),
+        (18, ''),
+        (19, ''),
+        (20, ''),
+        (21, ''),
+        (22, ''),
+        (23, ''),
+        (24, ''),
+        (25, ''),
+        (26, ''),
+        (27, ''),
+        (28, ''),
+        (29, ''),
+        (30, ''),
+        (31, ''),
+        (32, '')
+    ])
+    def test_page(self, chrome, index, expected_element):
         page = ElementsPage(chrome)
         page.open()
         elements = page.get_elements_page_categories()
-        assert len(elements) == 33
+        assert elements[index] == expected_element
 
-    #  todo перевірити відповіді всіх 33 елементів в елементс
-    #  assert elements[2] == "Radio Button"
-
-    def test_is_button_enabled(self, chrome):
-        page = PageDynamicProperties(chrome)# Довгий запис
-        page.open()
-        button: WebElement = page.disable_enable_button()
-        button.click()
-
-    def test_is_button_shown(self, chrome):
-        page = PageDynamicProperties(chrome).open()  # короткий запис
-        button: WebElement = page.button_invisible_visible()
-        button.click()
-
-
-
-
-
-
-
+    #  todo перевірити відповіді всіх 33 елементів в елементс за допомогою parametrise

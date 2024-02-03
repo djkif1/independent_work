@@ -26,6 +26,11 @@ from selenium import webdriver
 
 @pytest.fixture
 def chrome():
-    driver = webdriver.Chrome(executable_path="/home/vinch/Стільниця/independent work/PythonProject/Lesson_19/chromedriver")
+    options = webdriver.ChromeOptions()
+    #options.add_argument("--no-sandbox")# ранить від рута
+    #options.add_argument("--disable-gpu")# не використовує відеокарту
+    options.add_argument("--headless")
+    driver = webdriver.Chrome(options=options, executable_path="/home/vinch/Стільниця/independent work/PythonProject/Lesson_19/chromedriver")
     yield driver
     driver.quit()
+
