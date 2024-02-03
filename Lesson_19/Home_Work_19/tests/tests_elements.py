@@ -17,7 +17,7 @@ class TestElementsPage:
         page.open()
         button: WebElement = page.disable_enable_button()
         button.click()
-        pass
+
     def test_is_button_shown(self, chrome):
         page = PageDynamicProperties(chrome).open()  # короткий запис
         button: WebElement = page.button_invisible_visible()
