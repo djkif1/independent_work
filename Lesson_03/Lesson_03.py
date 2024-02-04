@@ -64,8 +64,7 @@
 # print(str_1.isdigit()) # використовуеться тільки з стр, перевіряє щоб строка була тільки з цифр
 # print(str_2.isalpha()) # використовуеться тільки з стр, перевіряє щоб строка була тільки з літер
 # print(str.find())
-
-
+#
 # num_1 = "999"
 # int_2 = "str"
 # print(num_1.isdigit())
@@ -78,6 +77,8 @@
 #     print((int(var_1)+int(var_2))*3)
 # else:
 #     print("Мипрацюємо тільки з цілими числами")
+
+
 
 # todo: Зрізи в str
 
@@ -145,7 +146,7 @@
 # print(list_a)
 # print(list_b)
 
-#todo кращий варіант копіювати списки
+# todo кращий варіант копіювати списки
 #
 # import copy
 #
@@ -161,9 +162,9 @@
 # print(sum(list_a)/len(list_a)) #знаходимо середню арефметичну з list_a
 
 
-#todo .split("/")
+# todo .split("/")
 
 var_of_numb = "123 35 236 str"
 list_numb = var_of_numb.split()
 print(list_numb)
-print(type(list_numb[3]),list_numb[2])
+print(type(list_numb[3]), list_numb[2])
