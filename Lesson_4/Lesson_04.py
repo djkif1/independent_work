@@ -79,9 +79,9 @@
 # print(list_a)
 # for element in list_a:
 #     element = str(element)
-#     if element.isdigit():
+#     if element.isdigit():# todo перевіряє чи належить тип данних до == (int)   ===============
 #         new_number_list.append(int(element)/100)
-#     elif element.isalpha():
+#     elif element.isalpha():# todo перевіряє чи належить тип данних до == (str)   ===============
 #         if element == "True":
 #             continue  # пропускає ітерацію і йде до наступного елементу
 #         elif element == "False":
@@ -95,7 +95,7 @@
 # for element in list_a:
 #     if isinstance(element, (int, float)):
 #         new_number_list.append(element/100)
-#     elif isinstance(element, str):
+#     elif isinstance(element, str):# todo перевіряє до якого типу данних належить елемент   ===============
 #         print(f"ваш елемент = {element}")
 # # print(new_number_list)
 #
