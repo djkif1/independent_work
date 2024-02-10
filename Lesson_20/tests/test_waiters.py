@@ -21,8 +21,9 @@ class TestWaiters:
         colored_button_loc = (By.ID, "colorChange")
         colored_button = self.driver.find_element(*colored_button_loc)
         WebDriverWait(self.driver, 5).until(ec.text_to_be_present_in_element_attribute(colored_button_loc,
-                                                                                       "class", "text-danger"))
+                                                                                      "class", "text-danger"))
         colored_button.click()
+        assert colored_button.text == "Color Change"
 
 
     def test_connection_enable(self):
@@ -30,5 +31,6 @@ class TestWaiters:
         enable_button_loc = (By.XPATH, '//*[@id="enableAfter"]')
         WebDriverWait(self.driver, timeout=5).until(ec.element_to_be_clickable(enable_button_loc))
         enable_button = self.driver.find_element(*enable_button_loc)
-        assert enable_button.is_enabled(), "Кнопка не в стані enabled"
         enable_button.click()
+        assert enable_button.is_enabled(), "Кнопка не в стані enabled"
+
