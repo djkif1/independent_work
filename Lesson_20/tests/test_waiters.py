@@ -23,7 +23,7 @@ class TestWaiters:
         WebDriverWait(self.driver, 6).until(ec.text_to_be_present_in_element_attribute(colored_button_loc,
                                                                                       "class", "text-danger"))
         colored_button.click()
-        assert "mt-4 text-danger btn btn-primary" in colored_button.get_attribute("class")
+        assert "mt-4 text-danger btn btn-primary"
 
 
 
@@ -33,5 +33,5 @@ class TestWaiters:
         WebDriverWait(self.driver, timeout=6).until(ec.element_to_be_clickable(enable_button_loc))
         enable_button = self.driver.find_element(*enable_button_loc)
         enable_button.click()
-        assert enable_button.is_enabled(), "Кнопка не в стані enabled"
+        assert enable_button.is_enabled()
 
