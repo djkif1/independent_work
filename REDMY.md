@@ -137,9 +137,13 @@ for index, element in enumerate(goods, start=1): # ʼenumerateʼ створюе 
 # Lesson 4
 
 ---
- ## Списки
+ ### Списки
 
 
+```Python
+list_a = ["банани", "яблука", "шампунь"]
+string_from_list = " ".join(list_a) #  склеює список через пробіл
+```
 
 
 

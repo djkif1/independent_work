@@ -94,13 +94,15 @@
 # print(list_a)
 # for element in list_a:
 #     if isinstance(element, (int, float)):
-#         new_number_list.append(element/100)
+#         new_number_list.append(element/100)# якщо тип данних належить до інта, або флота,
+#         # то ділимо на 100, створюємо новий список і записуємо
+#
 #     elif isinstance(element, str):# todo перевіряє до якого типу данних належить елемент   ===============
 #         print(f"ваш елемент = {element}")
-# # print(new_number_list)
-#
+# print(new_number_list)
 
-# # todo Чим відрізнятється tuple від list
+
+# # todo Чим відрізнятється tuple від list -  змінний тип (list) і не змінний (tuple)
 # # tuple
 # list_i = [3,4,5]
 # tuple_i = (3,4,5)
@@ -114,9 +116,9 @@
 # print(id(list_i))
 # print(id(tuple_2))
 
-import time
+# import time
 
-# while True:  # ТАК НІКОЛИ НЕ РОБІТЬ
+# while True:  # ТАК НІКОЛИ НЕ РОБІТЬ ==========================================================================
 #     time.sleep(1)
 #     print(1)
 
@@ -129,11 +131,14 @@ import time
 #     print(f"{n} =  {n ** 2}")
 
 
+
+
+
 # new_string = "+".join("Привіт як в тебе справи")
 # print(new_string)
 # print(list_b)
 # list_a = ["банани", "яблука", "шампунь"]
-# string_from_list = " ".join(list_a)
+# string_from_list = " ".join(list_a)# склеює список через пробіл
 # print(string_from_list)
 
 
@@ -142,7 +147,7 @@ import time
 # mid_name = "Андрійович"
 # balance = 15000000
 
-# text = """Шановний {0} {1}, баланс вашого рахунку складає {2} грн.""".format(name, mid_name, balance)
+# text = """Шановний {0} {1}, баланс вашого рахунку складає {2} грн.""".format(name, mid_name, balance) # один з варіантів "формату" тексту
 # print(text)
 
 # text = """Шановний {name} {mid_name}, баланс вашого рахунку складає
